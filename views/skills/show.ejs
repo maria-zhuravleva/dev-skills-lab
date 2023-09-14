@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+</head>
+<body>
+  <h1><%= skill.text %></h1>
+  <h3>Essential: <%= skill.essential %></h3>
+  <a href="/skills/<%= skill._id %>/edit">Edit</a>
+  <form action="/skills/<%= skill._id %>?_method=DELETE" method="POST">
+    <button>Remove skill</button>
+  </form>
+</body>
+</html>
